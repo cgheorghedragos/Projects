@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top_login_register_label"
+        android:layout_marginBottom="@dimen/register_bottom_margin_scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:context=".presentation.views.starting.SignUpFragment">
+
+            <!-- First Name-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/first_name_layout_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_top_login_register_label"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_first_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/first_name_text_register"
+                    android:layout_width="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:inputType="textFilter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/enter_first_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Last Name-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/last_name_layout_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/first_name_layout_register"
+                app:startIconDrawable="@drawable/ic_last_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/last_name_text_register"
+                    android:layout_width="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:inputType="textFilter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/enter_last_name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- UserName-->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/username_layout_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/last_name_layout_register"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_text_register"
+                    android:layout_width="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:inputType="textFilter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/enter_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- E-mail -->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/email_layout_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username_layout_register"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_text_register"
+                    android:layout_width="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.@_"
+                    android:inputType="textFilter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/enter_e_mail" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Password -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_layout_register"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_text_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Confirm password-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_layout_register"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirm_password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/retype_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/birth_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password_layout"
+                app:startIconDrawable="@drawable/ic_birth">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/birth_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:hint="@string/birth_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_confirm_button_startend"
+                android:layout_marginTop="@dimen/top_margin_between_input_fields"
+                android:layout_marginEnd="@dimen/margin_confirm_button_startend"
+                android:backgroundTint="@color/very_light_black_green"
+                android:text="@string/register_btn_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genderRegisterLayout" />
+
+            <TextView
+                android:id="@+id/goToSignInTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_top_margin"
+                android:paddingBottom="@dimen/padding_to_bottom_for_scroll"
+                android:text="@string/go_to_login_textview"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/register_label"
+                android:textColor="@color/black_green"
+                android:textSize="@dimen/medium_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_load_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                android:background="@drawable/rounded_register_button"
+                android:text="@string/upload_profile_picture"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/birth_date_layout" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/genderRegisterLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_margin_startend"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="@dimen/field_margin_startend"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_load_photo">
+
+                <RadioGroup
+                    android:id="@+id/genderRegisterRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/birth_date_layout">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black_green"
+                        android:text="@string/male_radio_button_text" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_between_fields"
+
+                        android:buttonTint="@color/black_green"
+                        android:text="@string/female_radio_button_text" />
+
+                </RadioGroup>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

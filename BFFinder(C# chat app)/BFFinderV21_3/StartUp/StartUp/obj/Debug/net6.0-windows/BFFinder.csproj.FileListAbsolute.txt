@@ -1,0 +1,9 @@
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.csproj.AssemblyReference.cache
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\StartUp.Views.Login.resources
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\StartUp.Views.Main.resources
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\StartUp.Views.Register.resources
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.csproj.GenerateResource.cache
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.AssemblyInfoInputs.cache
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.AssemblyInfo.cs
+C:\Users\drago\Desktop\Csharp\BFFinderV21_3\StartUp\StartUp\obj\Debug\net6.0-windows\BFFinder.csproj.CoreCompileInputs.cache

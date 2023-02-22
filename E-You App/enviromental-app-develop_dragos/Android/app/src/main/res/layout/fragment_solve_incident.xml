@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/report_event_green"
+    tools:context=".presentation.views.application.map.SolveIncidentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/closeSolveIncident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+
+                android:text="X"
+                android:textColor="@color/report_event_light_green"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddingPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="@dimen/margin_top_medium"
+                android:layout_marginRight="75dp"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:circularflow_defaultRadius="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/introTextView"
+                tools:layout_editor_absoluteX="41dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextAddPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_text"
+                    android:backgroundTint="@color/white_gray"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:hint="@string/type_here"
+                    android:inputType="textFilter" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userAddedRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="@dimen/margin_between_fields"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAddingPeople" />
+
+
+            <TextView
+
+                android:id="@+id/introTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_medium"
+                android:text="@string/add_your_teammates"
+                android:textColor="@color/report_event_light_green"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addUserTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hapticFeedbackEnabled="true"
+                android:text="+"
+                android:textColor="@color/very_light_green"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutAddingPeople"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutAddingPeople"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayoutAddingPeople" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/solveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="120dp"
+                android:backgroundTint="@color/report_event_yellow"
+                android:text="Solve"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userAddedRecycleView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

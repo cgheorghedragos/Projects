@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_login_register_label">125dp</dimen>
+    <dimen name="top_margin_between_input_fields">75dp</dimen>
+    <dimen name="margin_confirm_button_startend">105dp</dimen>
+    <dimen name="field_margin_startend">50dp</dimen>
+    <dimen name="margin_between_fields">20dp</dimen>
+    <dimen name="zero_dimension">0dp</dimen>
+    <dimen name="padding_to_bottom_for_scroll">75dp</dimen>
+    <dimen name="small_top_margin">10dp</dimen>
+    <dimen name="small_text_size">18sp</dimen>
+    <dimen name="medium_text_size">50sp</dimen>
+    <dimen name="top_margin_to_field">250dp</dimen>
+    <dimen name="register_bottom_margin_scrollview">75dp</dimen>
+    <dimen name="action_map_button_android">20dp</dimen>
+    <dimen name="height_incident_card_view">300dp</dimen>
+    <dimen name="margin_incidents_layout">25dp</dimen>
+    <dimen name="elevation_cardview_incidents">25dp</dimen>
+    <dimen name="height_incidents_text">40dp</dimen>
+    <dimen name="height_description_incident">120dp</dimen>
+    <dimen name="image_card_view_size_incident">100dp</dimen>
+    <dimen name="medium_card_radius">40dp</dimen>
+    <dimen name="margin_top_medium">50dp</dimen>
+    <dimen name="card_view_rounded_incident">25dp</dimen>
+    <dimen name="margin_edit_text_incident">20dp</dimen>
+    <dimen name="small_margin_edit_text_incident">10dp</dimen>
+    <dimen name="action_incident_button_size">80dp</dimen>
+    <dimen name="margin_action_buttons_incidents">100dp</dimen>
+    <dimen name="margin_top_report_action">50dp</dimen>
+    <dimen name="points_text_size">26sp</dimen>
+    <dimen name="username_ranking_text_sizr">18sp</dimen>
+    <dimen name="margin_bettwon_winner_and_username">15dp</dimen>
+    <dimen name="margin_rankin_item">25dp</dimen>
+    <dimen name="corner_radius_rankin_item">50dp</dimen>
+    <dimen name="margin_left_right_field_user_prof">50dp</dimen>
+    <dimen name="margin_between_action_buttons">35dp</dimen>
+</resources>

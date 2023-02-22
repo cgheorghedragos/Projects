@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ranking_light_black_green"
+    tools:context=".presentation.views.application.explore.RankingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/numberOneRankinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="1"
+                android:textSize="36sp"
+                android:textColor="@color/white_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/numberOneRankingImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_winner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numberOneRankinTextView" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rankingNrOneCardView"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numberOneRankingImage" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shadow_gren"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:cardCornerRadius="80dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/ranking_rounded_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardCornerRadius="80dp"
+                                app:cardElevation="0dp"
+                                app:cardMaxElevation="0dp"
+                                android:elevation="0dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_margin="5dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" >
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/firstWinnerImageView"
+                                        android:layout_width="130dp"
+                                        android:layout_height="130dp"
+                                        android:background="@color/report_event_light_green"
+                                        android:src="@drawable/ic_trash"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- CardView For second rank -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/secondWinnerCarView"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="230dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/ranking_rounded_color"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numberOneRankingImage">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/transparent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="80dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/secondWinnerImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/report_event_light_green"
+                                android:src="@drawable/ic_trash"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Third winner-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/thirdWinnerCarView"
+                android:layout_marginTop="75dp"
+                android:layout_marginStart="230dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/ranking_rounded_color"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numberOneRankingImage">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/transparent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="80dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thirdWinnerImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/report_event_light_green"
+                                android:src="@drawable/ic_trash"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/firstWinnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:textSize="@dimen/username_ranking_text_sizr"
+                android:text="@string/arond"
+
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rankingNrOneCardView" />
+
+            <TextView
+                android:id="@+id/firstWinnerPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pct"
+
+                android:textSize="@dimen/points_text_size"
+                android:textColor="@color/ranking_rounded_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstWinnerName" />
+
+            <TextView
+                android:id="@+id/secondWinnerName"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_bettwon_winner_and_username"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/username_ranking_text_sizr"
+                android:text="@string/arond"
+                android:textColor="@color/white_gray"
+                app:layout_constraintEnd_toEndOf="@+id/secondWinnerCarView"
+                app:layout_constraintStart_toStartOf="@+id/secondWinnerCarView"
+                app:layout_constraintTop_toBottomOf="@+id/secondWinnerCarView" />
+
+            <TextView
+                android:id="@+id/secondWinnerPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pct"
+                android:textSize="@dimen/points_text_size"
+                android:textColor="@color/ranking_rounded_color"
+                app:layout_constraintEnd_toEndOf="@+id/secondWinnerName"
+                app:layout_constraintStart_toStartOf="@+id/secondWinnerName"
+                app:layout_constraintTop_toBottomOf="@+id/secondWinnerName" />
+
+
+            <TextView
+                android:id="@+id/thirdWinnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arond"
+                android:layout_marginTop="@dimen/margin_bettwon_winner_and_username"
+                android:textSize="@dimen/username_ranking_text_sizr"
+                android:textColor="@color/white_gray"
+                app:layout_constraintEnd_toEndOf="@+id/thirdWinnerCarView"
+                app:layout_constraintStart_toStartOf="@+id/thirdWinnerCarView"
+                app:layout_constraintTop_toBottomOf="@+id/thirdWinnerCarView" />
+
+            <TextView
+                android:id="@+id/thirdWinnerPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pct"
+                android:textSize="@dimen/points_text_size"
+                android:textColor="@color/ranking_rounded_color"
+                app:layout_constraintEnd_toEndOf="@+id/thirdWinnerName"
+                app:layout_constraintStart_toStartOf="@+id/thirdWinnerName"
+                app:layout_constraintTop_toBottomOf="@+id/thirdWinnerName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp"
+                android:layout_marginBottom="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/secondWinnerWinningIcon"
+                app:layout_constraintEnd_toEndOf="@+id/secondWinnerCarView"
+
+                app:layout_constraintStart_toStartOf="@+id/secondWinnerCarView" />
+            <ImageView
+                android:id="@+id/secondWinnerWinningIcon"
+                android:src="@drawable/ic_silver"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/secondWinnerCarView"
+                app:layout_constraintEnd_toEndOf="@+id/secondWinnerCarView"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="@+id/secondWinnerCarView"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toTopOf="@+id/thirdWinnerWinningIcon"
+                app:layout_constraintEnd_toEndOf="@+id/thirdWinnerCarView"
+                android:layout_marginBottom="2dp"
+                app:layout_constraintStart_toStartOf="@+id/thirdWinnerCarView" />
+
+            <ImageView
+                android:id="@+id/thirdWinnerWinningIcon"
+                android:src="@drawable/ic_bronze"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/thirdWinnerCarView"
+                app:layout_constraintEnd_toEndOf="@+id/thirdWinnerCarView"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="@+id/thirdWinnerCarView"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rankingRecycleView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="100dp"
+                android:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secondWinnerPoints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

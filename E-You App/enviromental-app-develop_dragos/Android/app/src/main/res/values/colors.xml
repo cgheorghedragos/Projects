@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="mapboxWhite">#FFFFFF</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+
+    <color name="very_light_black_green">#5cbd36</color>
+    <color name="light_black_green">#559807</color>
+    <color name="black_green">#17921f</color>
+    <color name="light_green">#27db17</color>
+    <color name="very_light_green">#3cff00</color>
+    <color name="white_gray">#F5F5F5</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="report_event_yellow">#E3B448</color>
+    <color name="report_event_light_green">#CBD18F</color>
+    <color name="report_event_green">#3A6B35</color>
+
+    <color name="ranking_black_green">#111910</color>
+    <color name="ranking_light_black_green">#002a1e</color>
+    <color name="ranking_rounded_color">#00ffb3</color>
+    <color name="rankin_inside_item_color">#33554b</color>
+</resources>
