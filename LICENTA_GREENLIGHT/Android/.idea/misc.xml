@@ -1,0 +1,77 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_choose_sign_up_in_button.xml" value="0.2595" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_cilcular_fade_effect.xml" value="0.1915" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_cilcular_fade_effectg.xml" value="0.169" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_fade_effect_green.xml" value="0.1885" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_nav_item_state.xml" value="0.166" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_oval_button_fade_effect.xml" value="0.164" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_round_button.xml" value="0.2595" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_selected_item_navigation_view.xml" value="0.1775" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_sign_up_inputs.xml" value="0.1735" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/design_top_user_detail.xml" value="0.2395" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_bronze.xml" value="0.169" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_decline.xml" value="0.2625" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_deforesting.xml" value="0.2095" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_first_name.xml" value="0.1885" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_last_name.xml" value="0.1735" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_my_location.xml" value="0.228" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_planet_background.xml" value="0.1735" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_settings.xml" value="0.1" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_silver.xml" value="0.169" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_trash.xml" value="0.169" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/ic_winner.xml" value="0.169" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/shape_oval_dot.xml" value="0.158" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/shape_ring_tab_indicator.xml" value="0.157" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/shape_ring_tab_selector.xml" value="0.157" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/shape_stroke_border.xml" value="0.216" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/drawable/top_corner_round.xml" value="0.2585" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/activity_green_light_acitivty.xml" value="0.2" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_choose_sign_in_or_up.xml" value="0.16" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_f_a_q_screen.xml" value="0.25" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_first.xml" value="0.20599409033347404" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_google_map.xml" value="0.20820863616930313" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_home_screen.xml" value="0.20389249304911955" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_intro.xml" value="0.2" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_map_screen.xml" value="0.264" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_ranking_screen.xml" value="0.16799999999999998" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_report_dashboard.xml" value="0.20863616930312098" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_report_incident.xml" value="0.2" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_settings.xml" value="0.19666524155622062" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_sign_up_identification.xml" value="0.19709277469003847" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_sign_up_more_info.xml" value="0.19709277469003847" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_sign_up_name.xml" value="0.176" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_splash_screen.xml" value="0.2" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/fragment_tab.xml" value="0.1633176571184267" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_achievement.xml" value="0.536" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_bottom_dialog_choose_photo.xml" value="0.20514985225833685" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_faq_question.xml" value="0.264" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_home_dashboard.xml" value="0.264" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_ranking_person.xml" value="0.264" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_report_incident_dashboard.xml" value="0.128" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_top_bar_user.xml" value="0.25" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/layout/item_top_winner.xml" value="0.4" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/menu/bottom_menu.xml" value="0.20389249304911955" />
+        <entry key="..\:/An4/Licenta_final/Licenta/Android/app/src/main/res/menu/menu.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.036036036036036036" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

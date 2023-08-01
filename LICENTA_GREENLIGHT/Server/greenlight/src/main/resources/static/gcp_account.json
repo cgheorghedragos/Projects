@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "greenlightcloud",
+  "private_key_id": "696b5ba117f296396c7e9ccaadaa1dd99b49a826",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmThRWzXBTd0Xg\n0Ss1J7vzFtj1GF4JgzSyE4mAoMp5rXyL6ou6lsO1qOsPOqi61REZgevJ+/LxxpPt\nNI7gY8bzcCXwtpHFKJICQ+knzjLLv1FHPFzgOMHAsxVg5GLbgb1tGQOd7UeZhc1V\nWI61xyTDqYCQ93K1WXuh+lJzQ9ZDqIlhstgfmSaWc1TWEyv/SODgJlLauPyRXRNd\nbk/vgubcpoJvq+WMvog2/X4thqvZ1zgy6jwav2Q4qCkuAqQlx3OOykDz0baoBU6Y\nQLXSrMfn4vMi5mXZ7X2//v2XJdwSV3HvxAl8yzZduC6gGWeHsP9Q5ejIFEgYRGVz\ndW6KzgtBAgMBAAECggEAA2eIEtmTvUVXm8KZFcZ2JRPHIy0m4NRuizTGDk55rKAJ\nU4WB9iLdAhJ8MDXvQ1wGSfFTB/ckLgXBQcRUhoSLtjsEpNAzolo08yPL9uZpm5UI\nsKU8Qb5kXX8brr3IJgtqhZG9tVFos1cV+QN7cD5RwD66M3rZo9ufcbq8Y7s27Hro\nbvKN9ZkYljQ9I30F7TG+cbeA9+RnPySMJxxsXUJ9z2Z4SX/8asdH45lfH59cBKvg\nPdm9akqJfGd6QbhYl9FjQPHc8by7Qri2az8LQWddFELFjhgfx+sKFDiWwIzuuuKe\nyNoG30n8PT+lyeFhZoqM5KNj1VwlvLQKKuB6n9lfUQKBgQDer4QXpqZYUgy9J/hB\nMlvDBmySx3ulsdonFxG99YfBSqASJQ9QwshxeXqogYiqn1KK120Oj6F/GSRsggPb\nnB/yq3R+CHz+OLYX90G5dAzu7wNvTYg+6kXBpiuI30cyzAdBtaUnnOrZ0zhLPVJC\nvmVu4NRbcKRr3VSgcsrLwARVUQKBgQC/L0fr7fnTouJX0xe3peZL201CfXos4XeB\nSb75/fvhe0fNHAc2MWPDq638/DCjwitL29MO4zs6VG/z7FUZjDbRFS3tAcYjJ2F5\nINeU+BTlkfPBuzMfe3ZktYAGzyt2hDnWotvwR8+gu6wZTVGNGzJRQu4iHV1ndIvM\naaOmpzea8QKBgQCMNnV0suDQgbE1tSISYxP2I2hfry1Csk6LCHKKajv1T/ikFCOl\nlU/Ca1v5F76muDSv6V7oqTVlor4VeHPXZmGTWbO627tgEvNM+cmvbMvr8iD2hxn/\ni2EqwmdtAjGBYYg8LpRz8dDKIL20WkMedWXGv9fWT4GnzS/I6x6X1iqkUQKBgF3T\nc2WLBfdiUdiuJU6goXQK7VC7SdFq2X5e1dXUWuAe42762WM0O/TUdW/ZyHklmqAB\nAwSkafXHaKX6Dw2ZrXFRBpfxLe8krYaHoqVeVssPpOQn3gAOVF06Ydl1pKvmWohG\nps+2PmRwlhZYxrQMa9ZLlZiydpuGK/GmyoTIPdbRAoGBAK2qRvFxmq5UsaBIRDbo\nVovNNAtrsbVQXbt2Gl1+vUfzfgvpHrmJgmiWhupzGVLIGBMo8KRLrzXCx4oW9lu/\nvozdJ/ZAq0fJOnQCqHNO72M6W73CMrfSBBuhoyjOPNgRbF112VayhZyVAv9TIjJ7\n+i8Iw3/9zZqV6luKiR0M4DYF\n-----END PRIVATE KEY-----\n",
+  "client_email": "green-light-owner@greenlightcloud.iam.gserviceaccount.com",
+  "client_id": "105882791187386822248",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/green-light-owner%40greenlightcloud.iam.gserviceaccount.com"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/green3">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/person_knowing"
+        app:lottie_speed="1.5" />
+
+    <TextView
+        android:id="@+id/signUpNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:paddingStart="20dp"
+        android:text="Register your green ID"
+        android:textAlignment="center"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView2"
+        app:layout_constraintEnd_toStartOf="@+id/lottieAnimationView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_item_label"
+            android:paddingBottom="20dp"
+            app:layout_constraintHeight_max="0dp">
+
+            <!-- Username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameSignUpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+
+                app:boxStrokeWidth="@dimen/zero_dimension"
+
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameSignUpText"
+                    android:layout_width="match_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="@string/username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailSignUpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernameSignUpLayout"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailSignUpText"
+                    android:layout_width="match_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-@."
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="Email..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- phone number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberSignUpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailSignUpLayout"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumberSignUpText"
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="Phone Number..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordSignUpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumberSignUpLayout"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordSignUpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-@."
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="Password..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- confirm password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmPasswordSignUpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordSignUpLayout"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmPasswordSignUpText"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-@."
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="Confirm password..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelRegisterName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/design_choose_sign_up_in_button"
+            android:fontFamily="@font/akaya_telivigala"
+            android:padding="7dp"
+            android:text="Cancel"
+            android:textColor="@color/white_gray"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToAddressFieldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/design_choose_sign_up_in_button"
+            android:fontFamily="@font/akaya_telivigala"
+            android:padding="7dp"
+            android:text="Next"
+            android:textColor="@color/white_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

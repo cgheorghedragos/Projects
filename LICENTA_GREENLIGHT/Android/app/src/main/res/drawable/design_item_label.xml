@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFC107" /> <!-- Set the background color here, #FFC107 is the default color for Material Yellow -->
+    <corners android:radius="8dp" /> <!-- Set the corner radius of the background, adjust the value as per your requirement -->
+    <stroke android:width="4dp"
+        android:color="@color/black"/>
+    <padding
+        android:left="7dp"
+        android:top="4dp"
+        android:right="7dp"
+        android:bottom="2dp" /> <!-- Set the padding for the content inside the background, adjust the values as per your requirement -->
+    <gradient
+        android:startColor="#FF9800"
+        android:endColor="#FFC107"
+        android:angle="45" />
+
+</shape>

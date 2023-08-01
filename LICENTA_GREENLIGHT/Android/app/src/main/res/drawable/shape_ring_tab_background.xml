@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thickness="@dimen/thickness_dot_indicator_tab_dimen_selected"
+    android:useLevel="false">
+
+    <gradient
+        android:endColor="@color/green6"
+        android:startColor="@color/green_1" />
+    <stroke
+        android:width="5dp"
+        android:color="@color/black" />
+
+</shape>

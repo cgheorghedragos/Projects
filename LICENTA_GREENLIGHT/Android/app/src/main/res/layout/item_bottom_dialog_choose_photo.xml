@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+android:orientation="vertical">
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/pickFromGallery"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pick from Gallery"/>
+
+<Button
+    android:id="@+id/takePicture"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Take Picture"/>
+
+</LinearLayout>
+
+
+
+
+

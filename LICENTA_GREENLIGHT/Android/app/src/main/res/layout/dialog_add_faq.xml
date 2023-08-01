@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AA000000"
+
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/title_add"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@drawable/design_sign_up_inputs"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:text="Title.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/description_add"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@drawable/design_sign_up_inputs"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:text="Description.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_add" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Add new Frequency Asked Question"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_new_faq_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/design_choose_sign_up_in_button"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Add that"
+        app:layout_constraintEnd_toEndOf="@+id/description_add"
+        app:layout_constraintStart_toStartOf="@+id/description_add"
+        app:layout_constraintTop_toBottomOf="@+id/description_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

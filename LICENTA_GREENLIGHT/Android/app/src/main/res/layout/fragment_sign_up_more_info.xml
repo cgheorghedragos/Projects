@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".presentation.intro.view.FragmentSignUpName">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/person_knowing"
+        app:lottie_speed="1.5">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <!-- First Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstNameSignUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+        android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+        app:boxStrokeWidth="@dimen/zero_dimension"
+        app:boxStrokeWidthFocused="@dimen/zero_dimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_first_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design_sign_up_inputs"
+            android:hint="@string/first_name_input" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Last Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/lastNameSignUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+        android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+        app:boxStrokeWidth="@dimen/zero_dimension"
+        app:boxStrokeWidthFocused="@dimen/zero_dimension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin_between_inputs"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameSignUpLayout"
+        app:startIconDrawable="@drawable/ic_last_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design_sign_up_inputs"
+            android:hint="@string/last_name_input" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+        android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+        app:boxStrokeWidth="@dimen/zero_dimension"
+        app:boxStrokeWidthFocused="@dimen/zero_dimension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameSignUpLayout"
+        app:startIconDrawable="@drawable/ic_person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin_between_inputs"
+            android:background="@drawable/design_sign_up_inputs"
+            android:hint="@string/username_input" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signInNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:text="Hello, we want to know you, mabye,"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameSignUpLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+package com.ciurezu.gheorghe.dragos.greenlight.data.model.request;
+
+import com.ciurezu.gheorghe.dragos.greenlight.data.model.shared.AchievementLevelDTO;
+import com.ciurezu.gheorghe.dragos.greenlight.data.model.shared.UserDTO;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.io.Serial;
+import java.io.Serializable;
+
+@Data
+public class SimpleAchievementDTO implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @JsonProperty("current_progress")
+    private Integer currentProgress;
+    @JsonProperty("achievement_lvl")
+    private AchievementLevelDTO achievementLvl;
+}

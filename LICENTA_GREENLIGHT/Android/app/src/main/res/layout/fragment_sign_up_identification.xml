@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/green3">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/person_knowing"
+        app:lottie_speed="1.5" />
+
+    <TextView
+        android:id="@+id/signUpNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:paddingStart="20dp"
+        android:text="Please let me to know your address"
+        android:textAlignment="center"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView2"
+        app:layout_constraintEnd_toStartOf="@+id/lottieAnimationView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_item_label"
+            android:paddingBottom="20dp">
+
+            <!-- Town -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/townLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_town">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/townText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-"
+                    android:hint="Town.." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Steet -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/streetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/townLayout"
+                app:startIconDrawable="@drawable/ic_street">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/streetText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-@."
+                    android:hint="Street..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- phone number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sign_up_input_margin_between_start_end"
+                android:layout_marginTop="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/sign_up_input_margin_between_start_end"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/streetLayout"
+                app:startIconDrawable="@drawable/ic_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/numberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="Number..."
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_profile_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_item_label"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="7dp"
+        android:text="Add profile picture"
+
+        android:textColor="@color/white_gray"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBtnUpdateUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/design_choose_sign_up_in_button"
+            android:fontFamily="@font/akaya_telivigala"
+            android:padding="7dp"
+            android:text="Cancel"
+            android:textColor="@color/white_gray"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/design_choose_sign_up_in_button"
+            android:fontFamily="@font/akaya_telivigala"
+            android:padding="7dp"
+            android:text="Next"
+            android:textColor="@color/white_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

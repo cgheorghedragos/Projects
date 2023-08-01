@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AA000000"
+
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Add new Barcode"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/category_spinner_add"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/design_sign_up_inputs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/add_barcode_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        android:hint="Barcode"
+        android:padding="10dp"
+        android:background="@drawable/design_sign_up_inputs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_spinner_add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_new_barcode"
+        android:layout_width="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green8"
+        android:background="@drawable/design_choose_sign_up_in_button"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_barcode_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="#AA000000">
+
+    <TextView
+
+        android:id="@+id/old_faq_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Old title"
+        android:textColor="@color/light_green"
+        android:textSize="28sp"
+        android:fontFamily="@font/akaya_telivigala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/old_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Old description"
+        android:textColor="@color/light_green"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old_faq_name" />
+
+    <EditText
+        android:id="@+id/new_title_faq"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:background="@drawable/design_sign_up_inputs"
+        android:layout_marginTop="@dimen/small_margin"
+        android:inputType="text"
+        android:text="New Title"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old_description" />
+
+    <EditText
+        android:id="@+id/new_description_faq"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:background="@drawable/design_sign_up_inputs"
+        android:inputType="text"
+        android:text="New Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_title_faq" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_update_faq"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:fontFamily="@font/akaya_telivigala"
+        android:background="@drawable/design_choose_sign_up_in_button"
+        android:textColor="@color/green8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_description_faq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

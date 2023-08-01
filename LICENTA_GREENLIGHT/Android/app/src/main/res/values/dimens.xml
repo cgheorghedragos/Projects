@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_dimension">0dp</dimen>
+    <dimen name="small_margin_between_inputs">20dp</dimen>
+    <dimen name="sign_up_input_margin_between_start_end">40dp</dimen>
+    <dimen name="small_margin_start_end_buttons">80dp</dimen>
+    <dimen name="small_margin_top_label_sign_in">10dp</dimen>
+    <dimen name="small_start_margin_sign_in">40dp</dimen>
+    <dimen name="medium_size_sign_in_input_label">36sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="top_app_bar_height">80dp</dimen>
+    <dimen name="small_margin">20dp</dimen>
+    <dimen name="very_small_margin">6dp</dimen>
+    <dimen name="middle_radius_dimen">25dp</dimen>
+    <dimen name="large_ariuds_dimen">40dp</dimen>
+    <dimen name="medium_margin">50dp</dimen>
+    <dimen name="thickness_dot_indicator_tab_dimen">12dp</dimen>
+    <dimen name="thickness_dot_indicator_tab_dimen_selected">14dp</dimen>
+    <dimen name="small_radius_size">20dp</dimen>
+    <dimen name="normal_high_text_size">20sp</dimen>
+</resources>

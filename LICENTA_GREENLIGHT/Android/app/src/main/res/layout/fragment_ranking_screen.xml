@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design_fade_effect_green"
+    tools:context=".presentation.app.ranking.view.FragmentRankingScreen">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rankingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Top Greenest"
+                android:fontFamily="@font/akaya_telivigala"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/winnerPositionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rankingText" />
+
+            <!-- FIRST WINNER -->
+            <ImageView
+                android:id="@+id/imageWinnerStyle"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_winner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/winnerPositionText" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWinnerStyle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/firstWinnerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/design_cilcular_fade_effect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/ic_man"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/usernameWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="dragos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+            <TextView
+                android:id="@+id/coinsWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 pct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernameWinner" />
+
+
+            <!-- SECOND WINNER -->
+
+
+            <TextView
+                android:id="@+id/winner2PositionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="110dp"
+                android:text="2"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/winnerPositionText"
+                app:layout_constraintTop_toTopOf="@+id/imageWinnerStyle" />
+
+            <ImageView
+                android:id="@+id/image2WinnerStyle"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_silver"
+
+                app:layout_constraintEnd_toEndOf="@+id/winner2PositionText"
+                app:layout_constraintStart_toStartOf="@+id/winner2PositionText"
+                app:layout_constraintTop_toBottomOf="@+id/winner2PositionText" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image2CardView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/image2WinnerStyle"
+                app:layout_constraintStart_toStartOf="@+id/image2WinnerStyle"
+                app:layout_constraintTop_toBottomOf="@+id/image2WinnerStyle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/secondWinnerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/design_cilcular_fade_effect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/ic_man"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/username2Winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dragos"
+                app:layout_constraintEnd_toEndOf="@+id/image2CardView"
+                app:layout_constraintStart_toStartOf="@+id/image2CardView"
+                app:layout_constraintTop_toBottomOf="@+id/image2CardView" />
+
+            <TextView
+                android:id="@+id/coins2Winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 pct"
+                app:layout_constraintEnd_toEndOf="@+id/username2Winner"
+                app:layout_constraintStart_toStartOf="@+id/username2Winner"
+                app:layout_constraintTop_toBottomOf="@+id/username2Winner" />
+
+            <!-- THIRD WINNER -->
+
+
+            <TextView
+                android:id="@+id/winner3PositionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="40dp"
+                android:text="3"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/winnerPositionText"
+                app:layout_constraintTop_toTopOf="@+id/imageWinnerStyle" />
+
+            <ImageView
+                android:id="@+id/image3WinnerStyle"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_bronze"
+
+                app:layout_constraintEnd_toEndOf="@+id/winner3PositionText"
+                app:layout_constraintStart_toStartOf="@+id/winner3PositionText"
+                app:layout_constraintTop_toBottomOf="@+id/winner3PositionText" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image3CardView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/image3WinnerStyle"
+                app:layout_constraintStart_toStartOf="@+id/image3WinnerStyle"
+                app:layout_constraintTop_toBottomOf="@+id/image3WinnerStyle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thirdWinnerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/design_cilcular_fade_effect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/ic_man" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/username3Winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dragos"
+                app:layout_constraintEnd_toEndOf="@+id/image3CardView"
+                app:layout_constraintStart_toStartOf="@+id/image3CardView"
+                app:layout_constraintTop_toBottomOf="@+id/image3CardView" />
+
+            <TextView
+                android:id="@+id/coins3Winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 pct"
+                app:layout_constraintEnd_toEndOf="@+id/username3Winner"
+                app:layout_constraintStart_toStartOf="@+id/username3Winner"
+                app:layout_constraintTop_toBottomOf="@+id/username3Winner" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rankingRecycleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:clipToPadding="false"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coins2Winner" />
+
+            <TextView
+                android:id="@+id/close_button_ranking"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="32sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

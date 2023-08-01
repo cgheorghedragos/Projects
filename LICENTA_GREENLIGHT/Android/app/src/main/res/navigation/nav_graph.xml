@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSplashScreen">
+
+    <fragment
+        android:id="@+id/fragmentSplashScreen"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentSplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_fragmentSplashScreen_to_fragmentIntro"
+            app:destination="@id/fragmentIntro" />
+        <action
+            android:id="@+id/action_fragmentSplashScreen_to_fragmentChooseSignInOrUp"
+            app:destination="@id/fragmentChooseSignInOrUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentIntro"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentIntro"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_fragmentIntro_to_fragmentChooseSignInOrUp"
+            app:destination="@id/fragmentChooseSignInOrUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChooseSignInOrUp"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentChooseSignInOrUp"
+        android:label="fragment_choose_sign_in_or_up"
+        tools:layout="@layout/fragment_choose_sign_in_or_up" >
+        <action
+            android:id="@+id/action_fragmentChooseSignInOrUp_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_fragmentChooseSignInOrUp_to_fragmentSignUpName"
+            app:destination="@id/fragmentSignUpName" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentSignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_fragmentSignIn_to_fragmentSignUpName"
+            app:destination="@id/fragmentSignUpName" />
+        <action
+            android:id="@+id/action_fragmentSignIn_to_fragmentRankingScreen"
+            app:destination="@id/fragmentRankingScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignUpName"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentSignUpName"
+        android:label="fragment_sign_up_name"
+        tools:layout="@layout/fragment_sign_up_name" >
+        <action
+            android:id="@+id/action_fragmentSignUpName_to_fragmentSignUpIdentification"
+            app:destination="@id/fragmentSignUpIdentification" />
+        <action
+            android:id="@+id/action_fragmentSignUpName_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_fragmentSignUpName_to_fragmentChooseSignInOrUp"
+            app:destination="@id/fragmentChooseSignInOrUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignUpIdentification"
+        android:name="com.ciurezu.gheorghe.dragos.greenlight.presentation.intro.view.FragmentSignUpIdentification"
+        android:label="FragmentSignUpIdentification" >
+        <action
+            android:id="@+id/action_fragmentSignUpIdentification_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_fragmentSignUpIdentification_to_fragmentChooseSignInOrUp"
+            app:destination="@id/fragmentChooseSignInOrUp" />
+    </fragment>
+
+</navigation>

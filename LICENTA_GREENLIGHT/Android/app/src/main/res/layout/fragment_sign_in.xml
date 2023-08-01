@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design_fade_effect_green"
+    tools:context=".presentation.intro.view.FragmentSignUpName">
+
+
+    <TextView
+        android:id="@+id/signInNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:rotationX="0"
+        android:text="Welcome back"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usernameSignInCardView"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#AA000000"
+        android:rotationX="0"
+        app:cardCornerRadius="40dp"
+
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInNameTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameSingInTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/small_margin_between_inputs"
+                android:layout_marginBottom="@dimen/small_margin_between_inputs"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameSignInText"
+                    android:layout_width="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_"
+                    android:inputType="textFilter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="@string/username_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/usernameLabelSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_start_margin_sign_in"
+                android:layout_marginTop="@dimen/small_margin_top_label_sign_in"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_size_sign_in_input_label"
+                app:layout_constraintBottom_toTopOf="@+id/usernameSingInTextLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Password -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passwordSignInCardView"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="@dimen/small_margin_between_inputs"
+        android:backgroundTint="#AA000000"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameSignInCardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordSignInTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin_between_inputs"
+                android:layout_marginEnd="@dimen/small_margin_between_inputs"
+                android:layout_marginBottom="@dimen/small_margin_between_inputs"
+                app:boxStrokeWidth="@dimen/zero_dimension"
+                app:boxStrokeWidthFocused="@dimen/zero_dimension"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordSignInText"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_sign_up_inputs"
+                    android:hint="@string/password_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/passwordLabelSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_start_margin_sign_in"
+                android:layout_marginTop="@dimen/small_margin_top_label_sign_in"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_size_sign_in_input_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/design_oval_button_fade_effect"
+        android:fontFamily="@font/akaya_telivigala"
+        android:rotation="0"
+        android:text="@string/login_button_text"
+        android:textColor="@color/green2"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordSignInCardView"
+        app:layout_constraintStart_toStartOf="@+id/passwordSignInCardView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignInCardView" />
+
+    <TextView
+        android:id="@+id/signInToSignUpTextViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_in_dont_have_account"
+        android:fontFamily="@font/akaya_telivigala"
+        android:textColor="@color/green1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
