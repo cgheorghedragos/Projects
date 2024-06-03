@@ -1,0 +1,43 @@
+.mainClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers children along the main axis (horizontally) */
+    align-items: center; /* Centers children along the cross axis (vertically) */
+}
+
+.container {
+    width: 800px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #8282ff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.no-data {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(130, 130, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}

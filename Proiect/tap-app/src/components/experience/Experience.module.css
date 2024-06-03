@@ -1,0 +1,38 @@
+.mainClass {
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+    max-width: 600px; /* Constrain the width for a more focused layout */
+    background-color: #fff; /* Pure white background */
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease;
+}
+
+.mainClass h2 {
+    color: #333; /* Dark grey color */
+}
+
+.mainClass h3 {
+    color: #666; /* Medium grey color */
+}
+
+.mainClass p {
+    color: #444; /* Grey color */
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}

@@ -1,0 +1,51 @@
+.mainClass {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-content: center;
+    padding: 15px 20px;
+    background: #8282ff;
+    max-width: 1000px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.name-component {
+    font-weight: bold;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
